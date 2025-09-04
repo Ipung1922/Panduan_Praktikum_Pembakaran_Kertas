@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Praktikum - Pembakaran Kertas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .flame-bg {
+            background: linear-gradient(135deg, #ff4500, #ff8c00, #ff4500);
+            background-size: 200% 200%;
+            animation: gradient 8s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .paper-texture {
+            background-image: url('http://static.photos/textures/1200x630/5');
+            background-size: cover;
+            background-blend-mode: overlay;
+        }
+    </style>
+</head>
+<body class="font-['Poppins'] min-h-screen flex flex-col">
+    <!-- Cover Section -->
+    <section class="flame-bg text-white py-20 px-6 flex flex-col items-center justify-center text-center relative overflow-hidden">
+        <div class="absolute top-4 right-4 flex items-center space-x-3">
+    <!-- Icon utama -->
+    
+    <!-- Logo list -->
+    <div class="flex space-x-2">
+        <img src="logo1.png" alt="Logo 1" class="w-auto h-10 hover:scale-110 transition-transform">
+        <img src="logo2.png" alt="Logo 2" class="w-auto h-10 hover:scale-110 transition-transform">
+        <img src="logo3.png" alt="Logo 3" class="w-auto h-10 hover:scale-110 transition-transform">
+    </div>
+    <div class="bg-white p-2 rounded-full shadow-lg hover:scale-110 transition-transform">
+        <i data-feather="book-open" class="text-orange-600 w-7 h-7"></i>
+    </div>
+</div>
+
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Panduan Praktikum</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-8 drop-shadow-md">Pembakaran Kertas</h2>
+            <p class="text-xl md:text-2xl opacity-90 drop-shadow-sm">Mengamati perubahan kimia pada kertas saat dibakar</p>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="flex-1 py-12 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden paper-texture">
+            <div class="p-8 md:p-12">
+                <h1 class="text-3xl font-bold text-orange-600 mb-6">Panduan Praktikum: Pembakaran Kertas</h1>
+                
+                <div class="mb-8">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+                        <i data-feather="target" class="mr-2 text-orange-500"></i> Tujuan:
+                    </h2>
+                    <p class="text-gray-700 pl-8">Mengamati dan memahami perubahan kimia yang terjadi pada kertas saat dibakar.</p>
+                </div>
+                
+                <div class="mb-8">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+                        <i data-feather="tool" class="mr-2 text-orange-500"></i> Alat:
+                    </h2>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 pl-8">
+                        <li class="flex items-center"><i data-feather="check" class="mr-2 text-green-500 w-4 h-4"></i> Penjepit kayu</li>
+                        <li class="flex items-center"><i data-feather="check" class="mr-2 text-green-500 w-4 h-4"></i> Korek api</li>
+                        <li class="flex items-center"><i data-feather="check" class="mr-2 text-green-500 w-4 h-4"></i> Masker</li>
+                        <li class="flex items-center"><i data-feather="check" class="mr-2 text-green-500 w-4 h-4"></i> Botol Semprot</li>
+                        <li class="flex items-center"><i data-feather="check" class="mr-2 text-green-500 w-4 h-4"></i> Cawan porselen</li>
+                        <li class="flex items-center"><i data-feather="check" class="mr-2 text-green-500 w-4 h-4"></i> Bolpoin</li>
+                        <li class="flex items-center"><i data-feather="check" class="mr-2 text-green-500 w-4 h-4"></i> Tissue/lap kain</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-8">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+                        <i data-feather="box" class="mr-2 text-orange-500"></i> Bahan:
+                    </h2>
+                    <ul class="pl-8">
+                        <li class="flex items-center"><i data-feather="check" class="mr-2 text-green-500 w-4 h-4"></i> Kertas</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h2 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+                        <i data-feather="list" class="mr-2 text-orange-500"></i> Langkah Kerja:
+                    </h2>
+                    <ol class="space-y-4 pl-8">
+                        <li class="flex items-start">
+                            <span class="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">1</span>
+                            <span>Siapkan semua alat dan bahan di meja praktikum.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">2</span>
+                            <span>Gunakan masker untuk mengurangi bau asap hasil pembakaran.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">3</span>
+                            <span>Pastikan ada botol semprot berisi air untuk memadamkan api jika diperlukan.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">4</span>
+                            <span>Ambil selembar kertas lalu gulung hingga berbentuk tabung silinder.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">5</span>
+                            <span>Buat garis batas dengan pensil atau bolpoin pada kertas yang sudah digulung.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">6</span>
+                            <span>Jepit kertas menggunakan penjepit kayu.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">7</span>
+                            <span>Bakar ujung kertas menggunakan korek api.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">8</span>
+                            <span>Biarkan api membakar kertas secara perlahan hingga mencapai garis batas yang sudah ditentukan.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">9</span>
+                            <span>Tampung atau kumpulkan abu kertas ke dalam cawan.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">10</span>
+                            <span>Setelah pembakaran mencapai batas, segera padamkan api.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">11</span>
+                            <span>Bersihkan area praktikum menggunakan tissue/lap kain.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">12</span>
+                            <span>Kerjakan LKPD sesuai pocket book di kertas masing-masing 1 setiap kelompok.</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="bg-orange-50 px-8 py-6 border-t border-orange-200">
+                <div class="flex items-center text-orange-700">
+                    <i data-feather="alert-triangle" class="mr-2"></i>
+                    <span class="font-semibold">PERHATIAN:</span>
+                </div>
+                <p class="mt-2 text-orange-600">Lakukan praktikum ini dengan pengawasan guru/dosen dan tetap utamakan keselamatan kerja.</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- ...existing code... -->
+    </section>
+
+    <!-- Tombol Kembali di bawah -->
+    <div class="max-w-4xl mx-auto mb-8 px-6 flex justify-end">
+        <a href="index.html" class="inline-flex items-center px-5 py-2 bg-orange-600 text-white font-semibold rounded-full shadow hover:bg-orange-700 transition">
+            <i data-feather="arrow-left" class="mr-2"></i>
+            Kembali
+        </a>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-6 px-6 text-center">
+        <p>© 2025 Panduan Praktikum Kimia. All rights reserved.</p>
+    </footer>
+<!-- ...existing code... -->
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

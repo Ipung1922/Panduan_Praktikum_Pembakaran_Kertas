@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panduan Praktikum - Pembakaran Kertas</title>
+
+    <!-- TailwindCSS & Feather Icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .lab-bg {
+        background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+        background-image: url("http://static.photos/science/1920x1080/15");
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+      }
+      .academic-title {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        letter-spacing: -1px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        line-height: 1.2;
+      }
+    </style>
+  </head>
+  <body class="font-['Poppins'] min-h-screen flex flex-col">
+    <!-- Cover Section -->
+    <section
+      class="lab-bg text-gray-800 min-h-screen flex flex-col items-center justify-center text-center relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-blue-900/10 to-blue-900/30"
+      ></div>
+
+      <!-- Icon Top Right -->
+      <div class="absolute top-6 right-6">
+        <div class="bg-white/90 p-3 rounded-full shadow-xl backdrop-blur-sm">
+          <i data-feather="flask" class="text-blue-600 w-10 h-10"></i>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-4xl mx-auto px-6 space-y-10">
+        <!-- Uploaded Image -->
+        <div class="flex justify-center">
+          <img
+            src="judul.png"
+            alt="Ilustrasi Pembakaran Kertas"
+            class="w-60 md:w-80"
+          />
+        </div>
+
+        <!-- Title & Subtitle -->
+        <div class="space-y-4">
+          <h1
+            class="text-5xl md:text-6xl academic-title text-white drop-shadow-lg"
+          >
+            Panduan Praktikum<br />Pembakaran Kertas
+          </h1>
+          <p
+            class="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-medium"
+          >
+            Mengamati perubahan kimia pada kertas saat dibakar
+          </p>
+        </div>
+
+        <!-- Button + Arrow -->
+        <div class="mt-8 flex flex-col items-center space-y-4">
+          <a
+            href="PembakaranKertas.html"
+            class="px-6 py-3 bg-white/90 text-blue-700 font-semibold rounded-full shadow-lg hover:bg-white transition transform hover:scale-105 inline-block"
+          >
+            Mulai Praktikum
+          </a>
+
+          <!-- Arrow under button -->
+          <div class="animate-bounce">
+            <a href="#content"
+              ><i data-feather="chevron-down" class="text-white w-8 h-8"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="content" class="flex-1 py-12 px-6 bg-gray-50">
+      <div
+        class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden"
+      >
+        <div class="p-8 md:p-12">
+          <h1 class="text-3xl font-bold text-orange-600 mb-6">
+            Dasar Teori: Perubahan Kimia
+          </h1>
+
+          <div class="space-y-6 text-gray-700 leading-relaxed">
+            <p>
+              Perubahan kimia adalah suatu proses di mana suatu zat diubah
+              menjadi zat baru dengan sifat yang berbeda dari zat asalnya.
+              Berbeda dengan perubahan fisika, perubahan kimia ditandai dengan
+              terbentuknya zat baru yang tidak dapat kembali ke bentuk semula
+              hanya dengan perubahan fisik.
+            </p>
+
+            <p>Ciri-ciri terjadinya perubahan kimia antara lain:</p>
+            <ul class="list-disc pl-8 space-y-2">
+              <li>Terbentuknya zat baru dengan sifat yang berbeda.</li>
+              <li>Terjadinya perubahan warna, bau, atau rasa.</li>
+              <li>Munculnya gas, asap, atau gelembung.</li>
+              <li>Terbentuknya endapan atau sisa abu.</li>
+              <li>Perubahan bersifat permanen dan sulit dibalikkan.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-6 text-center">
+      <p>© 2025 Panduan Praktikum Kimia. All rights reserved.</p>
+    </footer>
+
+    <!-- Feather Init -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
