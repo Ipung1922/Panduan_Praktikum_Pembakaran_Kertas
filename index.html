@@ -3,150 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Panduan Praktikum - Pembakaran Kertas</title>
-
-    <!-- TailwindCSS & Feather Icons -->
+    <title>Panduan Praktikum Kimia</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-
-    <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
     <style>
-      html {
-        scroll-behavior: smooth;
-      }
-
-      .lab-bg {
-        background: linear-gradient(135deg, #1e3a8a, #3b82f6);
-        background-image: url("http://static.photos/science/1920x1080/15");
-        background-size: cover;
-        background-position: center;
-        background-blend-mode: multiply;
-      }
-      .academic-title {
+      body {
         font-family: "Poppins", sans-serif;
-        font-weight: 800;
-        letter-spacing: -1px;
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-        line-height: 1.2;
+      }
+      .hero-gradient {
+        background: linear-gradient(135deg, #e6f0ff 0%, #ffffff 100%);
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .transition-all {
+        transition: all 0.3s ease;
       }
     </style>
   </head>
-  <body class="font-['Poppins'] min-h-screen flex flex-col">
-    <!-- Cover Section -->
+  <body class="bg-white">
+    <!-- Logo pojok kanan atas -->
+    <div class="absolute top-8 right-8 flex items-center space-x-4 z-50">
+      <img src="logo1.png" alt="Logo 1" class="h-10 w-auto" />
+      <img src="logo2.png" alt="Logo 2" class="h-10 w-auto" />
+      <img src="logo3.png" alt="Logo 3" class="h-10 w-auto" />
+    </div>
+
+    <!-- Hero Section -->
     <section
-      class="lab-bg text-gray-800 min-h-screen flex flex-col items-center justify-center text-center relative overflow-hidden"
+      class="hero-gradient min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8"
     >
       <div
-        class="absolute inset-0 bg-gradient-to-b from-blue-900/10 to-blue-900/30"
-      ></div>
-
-      <!-- Icon Top Right -->
-      <div class="absolute top-6 right-6 flex items-center space-x-3">
-        <img
-          src="logo1.png"
-          alt="Logo 1"
-          class="w-auto h-10 hover:scale-110 transition-transform"
-        />
-        <img
-          src="logo2.png"
-          alt="Logo 2"
-          class="w-auto h-10 hover:scale-110 transition-transform"
-        />
-        <img
-          src="logo3.png"
-          alt="Logo 3"
-          class="w-auto h-10 hover:scale-110 transition-transform"
-        />
-      </div>
-
-      <!-- Content -->
-      <div class="relative z-10 max-w-4xl mx-auto px-6 space-y-10">
-        <!-- Uploaded Image -->
-        <div class="flex justify-center mt-10">
-          <img
-            src="judul.png"
-            alt="Ilustrasi Pembakaran Kertas"
-            class="w-60 md:w-80"
-          />
-        </div>
-
-        <!-- Title & Subtitle -->
-        <div class="space-y-4">
-          <h1
-            class="text-5xl md:text-6xl academic-title text-white drop-shadow-lg"
-          >
-            Panduan Praktikum<br />Pembakaran Kertas
-          </h1>
-          <p
-            class="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-medium"
-          >
-            Mengamati perubahan kimia pada kertas saat dibakar
-          </p>
-        </div>
-
-        <!-- Button + Arrow -->
-        <div class="mt-8 flex flex-col items-center space-y-4">
-          <a
-            href="PembakaranKertas.html"
-            class="px-6 py-3 bg-white/90 text-blue-700 font-semibold rounded-full shadow-lg hover:bg-white transition transform hover:scale-105 inline-block"
-          >
-            Mulai Praktikum
-          </a>
-
-          <!-- Arrow under button -->
-          <div class="animate-bounce">
-            <a href="#content"
-              ><i data-feather="chevron-down" class="text-white w-8 h-8"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Content Section -->
-    <section id="content" class="flex-1 py-12 px-6 bg-gray-50">
-      <div
-        class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden"
+        class="container mx-auto flex flex-col items-center justify-center mt-24"
       >
-        <div class="p-8 md:p-12">
-          <h1 class="text-3xl font-bold text-orange-600 mb-6">
-            Dasar Teori: Perubahan Kimia
-          </h1>
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight mb-6 text-center"
+        >
+          Panduan Praktikum Kimia
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-600 mb-8 text-center">
+          Praktikum Pembakaran Kertas dan Praktikum Sublimasi Kapur Barus
+        </p>
 
-          <div class="space-y-6 text-gray-700 leading-relaxed">
-            <p>
-              Perubahan kimia adalah suatu proses di mana suatu zat diubah
-              menjadi zat baru dengan sifat yang berbeda dari zat asalnya.
-              Berbeda dengan perubahan fisika, perubahan kimia ditandai dengan
-              terbentuknya zat baru yang tidak dapat kembali ke bentuk semula
-              hanya dengan perubahan fisik.
-            </p>
+        <!-- Tombol Mulai Belajar -->
+        <button
+          onclick="document.getElementById('pilih-praktikum').scrollIntoView({ behavior: 'smooth' });"
+          class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg mb-8"
+        >
+          Mulai Praktikum
+        </button>
 
-            <p>Ciri-ciri terjadinya perubahan kimia antara lain:</p>
-            <ul class="list-disc pl-8 space-y-2">
-              <li>Terbentuknya zat baru dengan sifat yang berbeda.</li>
-              <li>Terjadinya perubahan warna, bau, atau rasa.</li>
-              <li>Munculnya gas, asap, atau gelembung.</li>
-              <li>Terbentuknya endapan atau sisa abu.</li>
-              <li>Perubahan bersifat permanen dan sulit dibalikkan.</li>
-            </ul>
+        <!-- Gambar Cover -->
+        <img
+          src="Cover.png"
+          alt="Chemistry Illustration"
+          class="w-full max-w-md h-auto rounded-lg shadow-xl"
+          data-aos="fade-up"
+        />
+      </div>
+    </section>
+
+    <!-- Practical Section -->
+    <section id="pilih-praktikum" class="py-20 bg-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16"
+          data-aos="fade-up"
+        >
+          Pilih Praktikum
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-xl shadow-md overflow-hidden transition-all card-hover"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="p-8">
+              <div class="flex justify-center mb-4">
+                <img
+                  src="judul.png"
+                  alt="Praktikum Pembakaran Kertas"
+                  class="h-45 w-auto object-contain"
+                />
+              </div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">
+                Praktikum Pembakaran Kertas
+              </h3>
+              <div class="text-center">
+                <a
+                  href="PembakaranKertas.html"
+                  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all transform hover:scale-105 shadow-md inline-block"
+                >
+                  Mulai Praktikum
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-xl shadow-md overflow-hidden transition-all card-hover"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="p-8">
+              <div class="flex justify-center mb-6">
+                <img
+                  src="judul2.png"
+                  alt="Praktikum Sublimasi Kapur Barus"
+                  class="h-auto w-45 object-contain"
+                />
+              </div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">
+                Praktikum Sublimasi Kapur Barus
+              </h3>
+              <div class="text-center">
+                <a
+                  href="Cover2.html"
+                  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all transform hover:scale-105 shadow-md inline-block"
+                >
+                  Mulai Praktikum
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6 px-6 text-center">
-      <p>© 2025 Panduan Praktikum Kimia. All rights reserved.</p>
-    </footer>
-
-    <!-- Feather Init -->
     <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+      });
       feather.replace();
     </script>
   </body>
